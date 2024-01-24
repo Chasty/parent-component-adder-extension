@@ -1,8 +1,10 @@
 {
   "name": "addparentcomponent",
-  "displayName": "addParentComponent",
+  "displayName": "Add Parent Component",
   "description": "Add a parent component to any selected portion of code",
   "version": "0.0.1",
+  "publisher": "Chasty",
+  "license": "GPL-3.0",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -56,6 +58,10 @@
     "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chasty/parent-component-adder-extension"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",

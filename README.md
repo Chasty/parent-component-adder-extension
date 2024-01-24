@@ -1,4 +1,4 @@
-# addparentcomponent README
+# Add Parent Component
 
 This extensions helps you to add a parent component and you can give any name.
 
@@ -50,5 +50,14 @@ You can author your README using Visual Studio Code. Here are some useful editor
 
 - [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 - [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+## Contributing
+
+1. Clone the repo
+2. `npm i`
+3. Press `F5` to open a new window with your extension loaded
+4. Test your extension changes on this new window, open a file and add some code, then select a range of code and use the `Àdd Parent Component` option
+5. Any changes to the extension code are automatically applied to the extension running on the new window
+6. Remeber on this new window, you should press command + R, to reload the window, so that the changes are applied
 
 **Enjoy!**

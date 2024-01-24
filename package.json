@@ -3,7 +3,7 @@
   "displayName": "Add Parent Component",
   "description": "Add a parent component to any selected portion of code",
   "version": "0.0.1",
-  "publisher": "Chasty",
+  "publisher": "WillyRosa",
   "license": "GPL-3.0",
   "engines": {
     "vscode": "^1.85.0"

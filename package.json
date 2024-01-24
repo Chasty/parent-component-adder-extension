@@ -2,8 +2,9 @@
   "name": "addparentcomponent",
   "displayName": "Add Parent Component",
   "description": "Add a parent component to any selected portion of code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "WillyRosa",
+  "icon": "logo.png",
   "license": "GPL-3.0",
   "engines": {
     "vscode": "^1.85.0"

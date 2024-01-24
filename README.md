@@ -18,6 +18,10 @@ Install this extension from the VS Code Marketplace.
 
 Initial release of Add Parent Component
 
+### 0.0.2
+
+Add Logo to extension
+
 ---
 
 ## Contributing

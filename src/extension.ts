@@ -63,6 +63,9 @@ async function addParentComponent(customName?: string) {
   editor.edit((editBuilder) => {
     editBuilder.replace(selection, addedCode);
   });
+
+  // Trigger format command after adding the component
+  await vscode.commands.executeCommand("editor.action.format");
 }
 
 function registerContextMenu() {

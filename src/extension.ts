@@ -64,8 +64,28 @@ async function addParentComponent(customName?: string) {
     editBuilder.replace(selection, addedCode);
   });
 
-  // Trigger format command after adding the component
-  await vscode.commands.executeCommand("editor.action.format");
+  // Check if the Prettier extension is enabled
+  const prettierExtension = vscode.extensions.getExtension(
+    "esbenp.prettier-vscode"
+  );
+
+  // Check if the VscTsLanguageFeatures extension is enabled
+  const vscTsLanguageFeaturesExtension = vscode.extensions.getExtension(
+    "vscode.typescript-language-features"
+  );
+
+  console.log({
+    vscTsLanguageFeaturesExtension: vscTsLanguageFeaturesExtension?.isActive,
+  });
+
+  if (prettierExtension && prettierExtension.isActive) {
+    try {
+      // Trigger Prettier formatting
+      await vscode.commands.executeCommand("editor.action.format");
+    } catch (error) {
+      console.error("Error formatting document with Prettier:", error);
+    }
+  }
 }
 
 function registerContextMenu() {
@@ -108,7 +128,5 @@ function updateContextMenu(editor: vscode.TextEditor | undefined) {
       "editorContextMenuCommand",
       command
     );
-
-    vscode.window.showInformationMessage("Context menu updated");
   }
 }
